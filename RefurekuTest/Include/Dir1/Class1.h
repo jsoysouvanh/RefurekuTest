@@ -2,26 +2,26 @@
 
 #include <iostream>
 
-//#include "Generated/Class1.rfk.h"
+#include "Generated/Class1.rfk.h"
 
 namespace test
 {
-	class /*RFKClass()*/ Class1
+	class RFKClass() Class1
 	{
 		private:
-			//RFKField()
+			RFKField()
 			int	someInt = 2;
 
-			//RFKMethod()
+			RFKMethod()
 			void method1()	noexcept { std::cout << "Class1::method1();" << std::endl; }
 
 		protected:
-			//RFKField() 
+			RFKField() 
 			float	someFloat = 0.0f;
 
 		public:
 			Class1()	= default;
 
-		//RFKClass1_GENERATED
+		RFKClass1_GENERATED
 	};
 }

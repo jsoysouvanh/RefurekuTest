@@ -4,23 +4,23 @@
 
 #include "Dir1/Class1.h"
 
-//#include "Generated/Class2.rfk.h"
+#include "Generated/Class2.rfk.h"
 
-class /*RFKClass()*/ Class2 : public test::Class1
+class RFKClass() Class2 : public test::Class1
 {
 	private:
-		//RFKField()
+		RFKField()
 		double				someDouble	= 0.0;
 
-		//RFKField()
+		RFKField()
 		std::vector<test::Class1>	vec;
 
 	protected:
-		//RFKField()
+		RFKField()
 		test::Class1*		class1		= nullptr;
 
 	public:
 		Class2() = default;
 
-	//RFKClass2_GENERATED
+	RFKClass2_GENERATED
 };

@@ -1,6 +1,6 @@
 #include <iostream>
 
-//#include <TypeInfo/Database.h>
+#include <TypeInfo/Database.h>
 
 #include "Dir1/Class1.h"
 #include "Dir2/Class2.h"
@@ -16,7 +16,7 @@ int main()
 	test::Struct1	s1;
 	Enum1			e1;
 
-	/*rfk::Class const& arch = test::Class1::staticGetArchetype();
+	rfk::Class const& arch = test::Class1::staticGetArchetype();
 
 	std::cout << arch.name << std::endl;
 
@@ -27,7 +27,7 @@ int main()
 		std::cout << "Parent: " << parent.type->name << std::endl;
 
 	std::cout << Class2::staticGetArchetype().getField("class1")->type.archetype->name << std::endl;
-	std::cout << Class2::staticGetArchetype().getField("vec")->type.archetype << std::endl;*/
+	std::cout << Class2::staticGetArchetype().getField("vec")->type.archetype << std::endl;
 
 	return EXIT_SUCCESS;
 }
